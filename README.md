@@ -1,4 +1,4 @@
-# Academic Analytics Dashboard (Machine Learning Capstone)
+# Student Performance Prediction System
 
 A production-quality machine learning capstone project designed to predict student academic performance (continuous score and risk classification) based on attendance, study habits, class engagement, and midterm exams.
 
