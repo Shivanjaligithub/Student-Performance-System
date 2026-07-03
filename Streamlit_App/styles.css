@@ -1,0 +1,200 @@
+/* Premium Glassmorphic Dark-Theme Styling */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* Force dark gradient background on the main app */
+.stApp {
+    background: linear-gradient(135deg, #090d16 0%, #0e1220 50%, #15102a 100%) !important;
+    color: #f1f5f9 !important;
+    font-family: 'Outfit', -apple-system, sans-serif !important;
+}
+
+/* Force standard dark mode styling on headers */
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+}
+
+/* Glassmorphic Container Cards */
+.custom-card {
+    background: rgba(30, 41, 59, 0.4) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    padding: 26px !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    margin-bottom: 24px !important;
+}
+
+.custom-card:hover {
+    transform: translateY(-2px) !important;
+    border-color: rgba(99, 102, 241, 0.3) !important;
+    box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.15) !important;
+}
+
+/* Form block overrides to match dark glassmorphism */
+div[data-testid="stForm"] {
+    background: rgba(22, 28, 45, 0.5) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 16px !important;
+    padding: 30px !important;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Sidebar styling overrides */
+section[data-testid="stSidebar"] {
+    background-color: #0b0e17 !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Text styles */
+.metric-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+}
+
+.metric-value {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+/* Prediction Output Box (Premium Neon Glow Cards) */
+.prediction-box {
+    border-radius: 20px;
+    padding: 36px 20px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.predict-high {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(5, 150, 105, 0.25) 100%) !important;
+    border: 1px solid #10b981 !important;
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.25) !important;
+}
+
+.predict-med {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(79, 70, 229, 0.25) 100%) !important;
+    border: 1px solid #6366f1 !important;
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.25) !important;
+}
+
+.predict-low {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(217, 119, 6, 0.25) 100%) !important;
+    border: 1px solid #f59e0b !important;
+    box-shadow: 0 0 30px rgba(245, 158, 11, 0.25) !important;
+}
+
+.predict-critical {
+    background: linear-gradient(135deg, rgba(244, 63, 94, 0.15) 0%, rgba(225, 29, 72, 0.25) 100%) !important;
+    border: 1px solid #f43f5e !important;
+    box-shadow: 0 0 30px rgba(244, 63, 94, 0.25) !important;
+}
+
+.prediction-score {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 8px 0;
+    letter-spacing: -0.03em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.prediction-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #94a3b8;
+}
+
+.prediction-category {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 6px 16px;
+    border-radius: 30px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom progress bar styles */
+.progress-bar-container {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    height: 8px;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.progress-bar-fill {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #6366f1 0%, #10b981 100%);
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+/* Information alert boxes */
+.info-section {
+    background-color: rgba(30, 41, 59, 0.3) !important;
+    border-left: 4px solid #6366f1 !important;
+    border-radius: 0 12px 12px 0 !important;
+    padding: 20px !important;
+    margin-bottom: 24px !important;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left-width: 4px !important;
+}
+
+.info-section p {
+    color: #cbd5e1 !important;
+}
+
+/* Streamlit button modifications */
+.stButton>button {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.02em !important;
+    border: none !important;
+    padding: 12px 30px !important;
+    border-radius: 10px !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.35) !important;
+    width: 100% !important;
+    text-transform: uppercase !important;
+    font-size: 0.9rem !important;
+}
+
+.stButton>button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.5) !important;
+    border-color: transparent !important;
+}
+
+/* Input sliders styling text overrides */
+div[data-testid="stSlider"] label {
+    font-weight: 600 !important;
+    color: #cbd5e1 !important;
+}
+
+div[data-testid="stSelectbox"] label {
+    font-weight: 600 !important;
+    color: #cbd5e1 !important;
+}
